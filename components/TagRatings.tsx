@@ -31,13 +31,17 @@ function TagList({ tagData }: { tagData: TagScore[] }) {
   return (
     <ol className="mx-2">
       {tagData.map(({ tag, score }) => (
-        <li key={tag} className="flex justify-between">
-          <a className="truncate underline text-blue-300" href={`https://e621.net/posts?tags=${tag}`}>
-            {tag}
-          </a> <span className={score > 0 ? "text-green-400" : "text-red-400"}>{score}</span>
-        </li>
+        <TagRating key={tag} tag={tag} score={score} />
       ))}
     </ol>
   )
 }
 
+function TagRating({ tag, score }: { tag: string, score: number }) {
+  return (
+    <li key={tag} className="flex justify-between">
+      <a className="truncate underline text-blue-300" href={`https://e926.net/posts?tags=${tag}`}>{tag}</a>
+      <span className={score > 0 ? "text-green-400" : "text-red-400"}>{score}</span>
+    </li>
+  )
+}
