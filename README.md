@@ -2,19 +2,24 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Prereqs
 
-### e621 API Key and username
+You have a GitHub account
 
-Make an account on [e621](https://e621.net/) ([e926](https://e926.net/) for the "SFW" version) if you don't have one.
+OR
 
-After that, go to your profiles page, and click the API Key View link. Copy that value, and use it to make a .env file
-(save it in the project directory) with your user name and some default tags:
+You have a Node environment set up locally and can run code
 
-```Dotenv
-# .env
-API_KEY="1nHrmzmsvJf26EhU1F7CjnjC" # Not a real API key
-USERNAME="rocketraccoon"
-DEFAULT_TAGS="order:random rating:s score:>50 solo -comic -webm -swf"
-```
+## Setup 
+
+### Easy - Use GitHub Codespaces
+
+Log into GitHub first. Then, [make a new Codespace from this repository](https://github.com/codespaces/new?skip_quickstart=true&machine=basicLinux32gb&repo=941940938&ref=main&geo=UsEast). At this point, you're going to see a banner that reads
+
+> Codespace usage for this repository is paid for by [Your Username].
+
+By default, GitHub accounts have a $0 budget allocated for Codespaces with the setting enabled to block usage if you would go over budget. Codespaces can be used for up to 60 hours a month before it would incur any costs. You can go to [Your Budget Settings](https://github.com/settings/billing/budgets) to make sure that this is the case.
+
+Once it starts, you just need to wait for it to finish loading. Once it says "press any key to continue," hit any key, then you can move to Getting Started.
+
 
 ## Getting Started
 
@@ -22,15 +27,9 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result (clicking this link will work as intended in Codespaces).
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
